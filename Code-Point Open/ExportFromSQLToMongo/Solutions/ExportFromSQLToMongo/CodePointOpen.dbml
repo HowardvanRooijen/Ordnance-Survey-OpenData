@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OS" Class="CodePointOpenDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=OS;Integrated Security=True" SettingsObjectName="ExportFromSQLToMongo.Properties.Settings" SettingsPropertyName="OSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PostCodeGeoData" Member="PostCodeGeoDatas">
+    <Type Name="PostCodeGeoData">
+      <Column Name="PostCode" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(18,15) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
