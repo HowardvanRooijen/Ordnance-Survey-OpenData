@@ -7,11 +7,12 @@ namespace ExportFromSQLToMongo.Domain
         public PostCodes()
         {
             this.Id = ObjectId.NewObjectId();
+            this.loc = new double[1];
         }
 
         public ObjectId Id { get; set; }
         public string PostCode { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
+        public double[] loc { get; set; }
+        
     }
 }

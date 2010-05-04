@@ -19,12 +19,12 @@
                 using(var dc = new CodePointOpenDataContext())
                 {
                     var postcodes = from pc in dc.PostCodeGeoDatas
-                                    select new PostCodes
-                                        {
-                                            PostCode = pc.PostCode, 
-                                            Latitude = pc.Latitude.ToString(), 
-                                            Longitude = pc.Longitude.ToString()
-                                        };
+                                    select
+                                        new PostCodes
+                                            {
+                                                PostCode = pc.PostCode,
+                                                loc = new[] { (double)pc.Latitude, (double)pc.Longitude }
+                                            };
 
                     foreach (var postCodeEntry in postcodes)
                     {
@@ -32,6 +32,6 @@
                     }
                 }
             }
-        }
+         }
     }
 }

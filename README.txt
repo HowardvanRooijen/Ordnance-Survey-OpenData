@@ -24,7 +24,19 @@ Datasets available:
 MongoDB
 -------
 
-A MongoDB export of the dataset
+There are two datasets for MongoDB, both are in 7Zip compression format: http://www.7-zip.org/
+
+OS-Code-Point-Open-MongoDB-Dump.7z - use mongorestore.exe to import
+OS-Code-Point-Open-MongoDB-JSON-Export.7z - use mongoimport to import (then manually build the indexes):
+
+>db.PostCodes.ensureIndex({ PostCode : 1 })
+>db.PostCodes.ensureIndex({ loc : '2d' })
+
+You can then query using the following commands:
+
+>db.PostCodes.find({ PostCode: 'AB101AA' })
+>db.PostCodes.find({ loc : [-2.096647896, 57.14823188] })
+>db.runCommand({ geoNear : "PostCodes", near : [-2.096647896, 57.14823188], num : 10 });
 
 SQL2005
 -------
@@ -50,7 +62,7 @@ Script is in 7Zip compression format: http://www.7-zip.org/
 License:
 ========
 
-This data contains Ordnance Survey data © Crown copyright and database right 2010. 
-Code-Point Open contains Royal Mail data © Royal Mail copyright and database right 2010.
+This data contains Ordnance Survey data (c) Crown copyright and database right 2010. 
+Code-Point Open contains Royal Mail data (c) Royal Mail copyright and database right 2010.
 
 Data may be used under the terms of the OS OpenData licence: http://parlvid.mysociety.org:81/os/licence.pdf
