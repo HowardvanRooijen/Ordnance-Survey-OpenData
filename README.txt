@@ -59,6 +59,19 @@ A Microsoft SQL Server 2008 table script containing the data in the following co
 
 Script is in 7Zip compression format: http://www.7-zip.org/
 
+RavenDB
+------- 
+
+A RavenDB Smuggler dump.
+
+The document is in the format: 
+
+{"PostCode":"BB1 9NF","Location":{"Longitude":53.79244101,"Latitude":-2.472738685}}
+
+See http://ravendb.net for more info.
+
+Script is in 7Zip compression format: http://www.7-zip.org/
+
 License:
 ========
 
