@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CodePointOpen">
+  <DataContextMoniker Name="/CodePointOpenDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ba7e60b5-10bd-4b8f-95c6-9be52226eb28" absoluteBounds="2.5, 3.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CodePointOpenDataContext/PostCodeGeoData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3cf6ccbd-60e0-4357-89a2-6514cfa636b8" absoluteBounds="2.515, 4.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
